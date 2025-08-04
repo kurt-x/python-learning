@@ -21,6 +21,14 @@ g = 1
 def fun():
     global g  # 声明一个全局作用域的变量
     g = 10
+    f = 10
+
+    def inner_fun():
+        nonlocal f
+        f = 5
+
+    inner_fun()
+    print('nonlocal data:', f)
 
 fun()
 
