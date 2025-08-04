@@ -36,3 +36,6 @@ def lambda_function(x, y, lam):
     print('Lambda result:', lam(x, y))
 
 lambda_function(1, 2, lambda x, y: x + y)
+
+def module_function():
+    print('Function from function module')
