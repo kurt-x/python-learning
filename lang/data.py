@@ -68,6 +68,7 @@ b = 'world!'
 print('concat:', a + ' ' + b)
 pi = 3.1415926
 print('format:', f'{'p' + 'i'} = {pi:.2f}')
+print('raw', r'\'\n')
 
 # 布尔值
 print('boolean:', True, False)
