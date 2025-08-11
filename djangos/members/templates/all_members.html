@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+Django Demo - 成员列表
+{% endblock %}
+
+{% block content %}
+<p><a href="/">主页</a></p>
+
+<h1>成员列表</h1>
+
+<ul>
+    {% for m in member_list %}
+    <li><a href="details/{{ m.id }}">{{ m.firstname }} {{ m.lastname }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

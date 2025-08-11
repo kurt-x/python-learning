@@ -7,6 +7,6 @@ insert_final_newline = true
 max_line_length = 120
 tab_width = 4
 
-[{*.json,*.yaml,*.yml,*.toml}]
+[{*.json,*.yaml,*.yml,*.toml,*.css}]
 indent_size = 2
 tab_width = 2

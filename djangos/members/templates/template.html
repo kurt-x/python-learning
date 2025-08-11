@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %} <!-- 加载静态文件 -->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" href="{% static 'test.css' %}">
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+</head>
+<body>
+{% for f in fruits %}
+<h1>{{ f }}</h1>
+{% endfor %}
+
+<p>可以在 views.py 中查看 fruits 变量</p>
+</body>
+</html>
